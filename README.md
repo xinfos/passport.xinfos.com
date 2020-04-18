@@ -1,2 +1,2 @@
-# passport.xinfos.com
-This is the account service of xinfos.
+# pika
+pika is golang framework
