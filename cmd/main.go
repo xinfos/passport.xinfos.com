@@ -22,7 +22,7 @@ func main() {
 	g = routers.Load(g)
 	// ginpprof.Wrap(g)
 
-	if err := g.Run(":8082"); err != nil {
+	if err := g.Run(":8080"); err != nil {
 		logger.F.Error("service start fail: " + err.Error())
 	}
 }

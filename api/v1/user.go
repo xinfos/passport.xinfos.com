@@ -2,6 +2,7 @@ package v1
 
 import (
 	"net/http"
+
 	"passport.xinfos.com/api"
 	"passport.xinfos.com/internal/model"
 	"passport.xinfos.com/internal/service"
@@ -74,4 +75,10 @@ func CreateUser(c *gin.Context) {
 
 	api.JSON(c, http.StatusOK, map[string]uint64{"user_id": userId}, nil)
 	return
+}
+
+func ServiceLogin(c *gin.Context) {
+	c.HTML(http.StatusOK, "index.tmpl", gin.H{
+		"title": "Main website",
+	})
 }

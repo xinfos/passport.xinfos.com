@@ -44,7 +44,7 @@ func Get() ServiceConfig {
 
 	once.Do(func() {
 
-		configFile := "/var/www/config.dev.yaml"
+		configFile := "/tmp/config.dev.yaml"
 		fmt.Println(configFile)
 		configData, err := ioutil.ReadFile(configFile)
 		if err != nil {
